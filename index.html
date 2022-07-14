@@ -11,31 +11,33 @@
 
 <body>
   <main>
-    <section class="container">
-      <h1 class="score">Ties: <span>0</span></h1>
-      <h1 class="score">Final Score: <span>0</span></h1>
+    <section class="score-section">
+      <h1>Rock Paper Scissors</h1>
+      <h2 class="ties">Ties: 0</h2>
     </section>
 
-    <section class="container">
-      <h1 class="winner">Winner: </h1>
-      <button type="button">New Game</button>
+    <section class="winner-section">
+      <h2 class="winner"></h2>
+      <button class="reset" onclick="resetGame()">Play Again?</button>
     </section>
 
-    <section class="player">
-      <h2 class="player-score">Player Score: <span>0</span></h2>
-      <div class="choices">
-        <img src="./images/rock.jpg" alt="Rock">
-        <img src="./images/paper.png" alt="Paper">
-        <img src="./images/scissors.png" alt="Scissors">
+    <section class="player-section">
+      <h3 class="player-choice"></h3>
+      <h3 class="player-score">Score: 0</h3>
+      <div class="player-images">
+        <img src="./images/rock.png" alt="Rock" class="player-image" id="rock">
+        <img src="./images/paper.png" alt="Paper" class="player-image" id="paper">
+        <img src="./images/scissors.png" alt="Scissors" class="player-image" id="scissors">
       </div>
     </section>
 
-    <section class="computer">
-      <h2 class="player-score">Computer Score: <span>0</span></h2>
-      <div class="choices">
-        <img src="./images/rock.jpg" alt="Rock">
-        <img src="./images/paper.png" alt="Paper">
-        <img src="./images/scissors.png" alt="Scissors">
+    <section class="computer-section">
+      <h3 class="computer-choice"></h3>
+      <h3 class="computer-score">Score: 0</h3>
+      <div class="computer-images">
+        <img src="./images/rock.png" alt="Rock" class="rock">
+        <img src="./images/paper.png" alt="Paper" class="paper">
+        <img src="./images/scissors.png" alt="Scissors" class="scissors">
       </div>
     </section>
   </main>
